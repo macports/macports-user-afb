@@ -7,9 +7,6 @@ Group: MacPorts
 
 Provides: org.macports.darwin8
 
-# XXX this is a python24 packaging error.
-Provides: /usr/local/bin/python
-
 # XXX /System/Library/Frameworks
 Provides: AGL
 Provides: Accelerate
