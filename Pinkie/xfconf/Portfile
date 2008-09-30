@@ -1,0 +1,25 @@
+# $Id$
+
+PortSystem 1.0
+
+name		xfconf
+version		4.5.90
+categories	xfce
+platforms	darwin
+maintainers	afb@macports.org
+description	easy-to-use configuration system for xfce
+long_description ${description}
+homepage	http://www.xfce.org/
+master_sites	http://www.ca-us.xfce.org/archive/xfce-${version}/src/
+use_bzip2	yes
+checksums	md5 f32d6b39a51955658d29228c92320797 \
+		sha1 69776a53580a6017cc6f98f2536e55d120355a6a \
+		rmd160 819ebe64c80bcb8130e2e135be7e7d21400b0d53
+
+depends_lib	port:libxfce4util \
+		port:dbus port:dbus-glib \
+		lib:libX11:XFree86 port:gtk2
+
+platform darwin {
+	configure.args-append --disable-visibility
+}

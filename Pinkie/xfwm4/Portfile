@@ -3,7 +3,7 @@
 PortSystem 1.0
 
 name		xfwm4
-version		4.4.2
+version		4.5.90
 categories	xfce
 platforms	darwin
 maintainers	afb@macports.org
@@ -12,10 +12,10 @@ long_description ${description}
 homepage	http://www.xfce.org/
 master_sites	http://www.ca-us.xfce.org/archive/xfce-${version}/src/
 use_bzip2	yes
-checksums	md5 21da77e50b07e72bba784bf3418ca067 \
-		sha1 a6d8b3b1493ff98141cfb7232ef6b4940224bce9 \
-		rmd160 b3ced6edac44b0b232be4312ca2281095c03e14b
+checksums	md5 d36c3c3a63fa53bc3338ab2188507de4 \
+		sha1 39b17e908c715cdea4323a9e4b3e7b559bd2194e \
+		rmd160 522b11ad5685d2e8a71bf295d77280cac4a2e77a
 
 configure.args	--enable-randr --enable-startup-notification \
 		--disable-compositor --disable-xsync
-depends_lib	port:xfce-mcs-manager port:gtk2 lib:libXrandr:XFree86
+depends_lib	port:xfconf port:gtk2 port:dbus-glib lib:libXrandr:XFree86

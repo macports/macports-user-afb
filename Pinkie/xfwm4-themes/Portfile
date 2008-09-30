@@ -3,7 +3,7 @@
 PortSystem 1.0
 
 name		xfwm4-themes
-version		4.4.2
+version		4.5.90
 categories	xfce
 platforms	darwin
 maintainers	afb@macports.org
@@ -12,8 +12,8 @@ long_description ${description}
 homepage	http://www.xfce.org/
 master_sites	http://www.ca-us.xfce.org/archive/xfce-${version}/src/
 use_bzip2	yes
-checksums	md5 fbea3ef7eec87fd669958f9cf597bfb8 \
-		sha1 ce682c0713fda99b34e6569df5bd053ce8bd4928 \
-		rmd160 dd483527b1c5da63f0341d21399ecc578b46dedc
+checksums	md5 3621805879d651843bf70883d1d6bbcb \
+		sha1 edfc6a58e9ce9a4744e02ea937422fa20a51aae3 \
+		rmd160 a5af5ad7b472809b21a0d46e6fba9bb5d3260ef4
 
 depends_lib	port:xfwm4

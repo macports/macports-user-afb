@@ -3,7 +3,7 @@
 PortSystem 1.0
 
 name		xfce4-panel
-version		4.4.2
+version		4.5.90
 categories	xfce
 platforms	darwin
 maintainers	afb@macports.org
@@ -12,10 +12,14 @@ long_description ${description}
 homepage	http://www.xfce.org/
 master_sites	http://www.ca-us.xfce.org/archive/xfce-${version}/src/
 use_bzip2	yes
-checksums	md5 8f26b32c442bf9926f98f285a3c251dd \
-		sha1 f66a5f46abc21324e5a375e52a37b98757eae121 \
-		rmd160 6bcbc27d3de95d631ee3f556cf79ed89450769eb
+checksums	md5 9368d6d84ce436ddb0a40b76a21f6a7c \
+		sha1 5f6c415fbaeae57f6e9194f3fe5b3d170bb4ce72 \
+		rmd160 b7e4976d9af9bf2651d500249363d607ad831cbd
 
-depends_lib	port:xfce-mcs-manager port:libxml2 port:hicolor-icon-theme
+depends_lib	port:xfconf port:exo port:libxml2 port:cairo port:hicolor-icon-theme
 
 configure.args	--enable-startup-notification
+
+platform darwin {
+	configure.args-append --disable-visibility
+}
