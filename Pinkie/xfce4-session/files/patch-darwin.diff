@@ -4,8 +4,8 @@
  if test x"`uname | grep \"CYGWIN\"`" != x""; then
  	AC_DEFINE([HAVE_OS_CYGWIN], [1], [Compiling under cygwin])
  fi
-+AM_CONDITIONAL([HAVE_OS_DARWIN], [test x"`uname | grep \"DARWIN\"`" != x""])
-+if test "`uname`" = "Darwin"; then
++AM_CONDITIONAL([HAVE_OS_DARWIN], [test x"`uname`" = x"Darwin"])
++if test x"`uname`" = x"Darwin"; then
 +	AC_DEFINE([HAVE_OS_DARWIN], [1], [Compiling under darwin])
 +fi
  
@@ -26,7 +26,7 @@
  _ACEOF
  
  fi
-+ if test "`uname`" = "Darwin"; then
++ if test x"`uname`" = x"Darwin"; then
 +  HAVE_OS_DARWIN_TRUE=
 +  HAVE_OS_DARWIN_FALSE='#'
 +else
@@ -34,7 +34,7 @@
 +  HAVE_OS_DARWIN_FALSE=
 +fi
 +
-+if test "`uname`" = "Darwin"; then
++if test x"`uname`" = x"Darwin"; then
 +
 +cat >>confdefs.h <<\_ACEOF
 +#define HAVE_OS_DARWIN 1
