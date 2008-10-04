@@ -16,7 +16,7 @@ checksums	md5 033d05d31de899e48a5c7e62fe8826d5 \
 		sha1 f7108678a3e72592dac5d1cf946a8993a6aab1bb \
 		rmd160 48da565ecbbd27910f10bcaf2b5c6992cbbc3db0
 
-configure.args	--mandir=${prefix}/share/man --enable-mcs-plugin --disable-python
+configure.args	--mandir=${prefix}/share/man --disable-python
 
 depends_lib	port:p5-uri port:libxfce4util port:gtk2 port:pkgconfig
 
