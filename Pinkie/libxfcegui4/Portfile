@@ -19,7 +19,7 @@ checksums	md5 eb7b218900e8ccc35973319f66b2474b \
 configure.args	--enable-startup-notification
 
 depends_lib	port:libxfce4util \
-		port:libxfce4mcs \
+		port:libglade2 \
 		port:gtk-xfce-engine \
 		port:libxml2 \
 		port:startup-notification
