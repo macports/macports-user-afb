@@ -16,7 +16,7 @@ checksums	md5 cd0e67e709c95a370d6d736d466b0b7c \
 		sha1 f73c1a6aa9f717b2a12b3874f2eaeb65767d63b8 \
 		rmd160 7f03231e7cc6294cc7b64be0a98d1b84beb6fd70
 
-depends_lib	port:libxfcegui4 port:pkgconfig
+depends_lib	port:libxfcegui4 port:pkgconfig port:libwnck
 
 platform darwin 8 {
     patchfiles-append		patch-configure.diff
