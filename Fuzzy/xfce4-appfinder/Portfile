@@ -1,0 +1,19 @@
+# $Id$
+
+PortSystem 1.0
+
+name		xfce4-appfinder
+version		4.5.91
+categories	xfce
+platforms	darwin
+maintainers	afb@macports.org
+description	Software to find every application supporting Desktop entry format
+long_description ${description}
+homepage	http://www.xfce.org/
+master_sites	http://www.ca-us.xfce.org/archive/xfce-${version}/src/
+use_bzip2	yes
+checksums	md5 36c7b7b56fd8f4bc8199b426e68d0bf7 \
+		sha1 c11e0cd79a69dc2ee29fe79d3554c2d8608601fd \
+		rmd160 8623e5b5cec32832c8c400279b44bf5747b3af63
+
+depends_lib	port:libxfcegui4 port:pkgconfig

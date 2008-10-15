@@ -1,0 +1,19 @@
+# $Id$
+
+PortSystem 1.0
+
+name		gtk-xfce-engine
+version		2.5.91
+categories	xfce
+platforms	darwin
+maintainers	afb@macports.org
+description	Port of xfce engine to GTK+-2.0
+long_description ${description}
+homepage	http://www.xfce.org/
+master_sites	http://www.ca-us.xfce.org/archive/xfce-4.5.91/src/
+use_bzip2	yes
+checksums	md5 d650c9ded7da695db90b6ace0f379d3e \
+		sha1 2ef1f466a3dc9f7c54381c79092d117c0fda0ad9 \
+		rmd160 4511bbde72d9d5412db7b4f70e1b52ffe3a5dabb
+
+depends_lib	port:gtk2

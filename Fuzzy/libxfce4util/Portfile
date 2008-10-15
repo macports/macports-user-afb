@@ -1,0 +1,24 @@
+# $Id$
+
+PortSystem 1.0
+
+name		libxfce4util
+version		4.5.91
+categories	xfce
+platforms	darwin
+maintainers  	afb@macports.org
+description	Utility library for the Xfce4 desktop environment
+long_description ${description}
+homepage	http://www.xfce.org/
+master_sites	http://www.ca-us.xfce.org/archive/xfce-${version}/src/
+use_bzip2	yes
+checksums	md5 e0e52c487da258cacdf0c92a487b316f \
+		sha1 750da7426c2ee897b766e36c006583d2c18b3cb2 \
+		rmd160 3f5e3cb4e7e7a4e4f3d994fd1cac8fba1af92f8f
+
+depends_lib	port:gettext port:glib2 \
+		port:libiconv port:pkgconfig
+
+platform darwin {
+	configure.args	--disable-visibility
+}
