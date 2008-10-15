@@ -46,7 +46,7 @@
  echo $ECHO_N "checking for x11 >= 1.0.0... $ECHO_C" >&6; }
 -  if $PKG_CONFIG "--atleast-version=1.0.0" "x11" >/dev/null 2>&1; then
 -    LIBX11_VERSION=`$PKG_CONFIG --modversion "x11"`
-+  if $true; then
++  if true; then
 +    #LIBX11_VERSION=`$PKG_CONFIG --modversion "x11"`
      { echo "$as_me:$LINENO: result: $LIBX11_VERSION" >&5
  echo "${ECHO_T}$LIBX11_VERSION" >&6; }
