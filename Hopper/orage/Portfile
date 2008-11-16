@@ -1,0 +1,20 @@
+# $Id$
+
+PortSystem 1.0
+
+name		orage
+version		4.5.92
+categories	xfce
+platforms	darwin
+maintainers	afb@macports.org
+description	Time-managing application for the Xfce desktop environment
+long_description ${description}
+homepage	http://www.xfce.org/
+master_sites	http://www.ca-us.xfce.org/archive/xfce-${version}/src/
+use_bzip2	yes
+checksums	md5 563d80c01659337a7c0f11bb439a555d \
+		sha1 645d2945a668e6ce257ab7a01dfc7868d8dc0aa8 \
+		rmd160 fcf8af5f6135d79e99164c76fceba4cd771b4ab0
+
+depends_lib	port:exo port:xfce4-panel
+depends_build	port:xfce-mcs-manager

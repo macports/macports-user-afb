@@ -1,0 +1,21 @@
+# $Id$
+
+PortSystem 1.0
+
+name		xfce4-dev-tools
+version		4.5.92
+categories	xfce devel
+platforms	darwin
+maintainers	afb@macports.org
+description	A collection of tools and macros for Xfce developer
+long_description ${description}
+homepage	http://www.xfce.org/
+master_sites	http://www.ca-us.xfce.org/archive/xfce-${version}/src/
+checksums	md5 1c56d44989e0c369d494db6604309bb3 \
+		sha1 c37bc3090a7d8e6a0c1809b8658870931557135b \
+		rmd160 07ae579d9e095d5c0801563e58152153b0dce095
+
+use_bzip2	yes
+
+depends_lib	port:gtk-doc port:intltool
+
