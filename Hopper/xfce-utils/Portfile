@@ -4,6 +4,7 @@ PortSystem 1.0
 
 name		xfce-utils
 version		4.5.92
+revision	1
 categories	xfce
 platforms	darwin
 maintainers	afb@macports.org
@@ -18,7 +19,7 @@ checksums	md5 8700842ab643838910ec9adfa08aa01d \
 
 depends_lib	port:libxfce4util port:xfconf
 
-configure.args	--disable-gdm
+configure.args	--disable-gdm --with-xsession-prefix=${prefix}
 configure.ldflags-append	"-L${x11prefix}/lib -lXft -lfontconfig -lXrender -lXext -lXinerama -lXrandr"
 
 variant midori {
