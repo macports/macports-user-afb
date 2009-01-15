@@ -18,7 +18,3 @@ checksums	md5 7d3b5f1400cc053ef01ad61e209d5828 \
 
 configure.args	--enable-session-screenshots --disable-gnome
 depends_lib	port:libxfce4util port:libxfcegui4 port:p5-xml-parser port:libwnck
-
-platform darwin {
-	patchfiles patch-darwin.diff
-}
