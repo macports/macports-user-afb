@@ -1,0 +1,24 @@
+# $Id$
+
+PortSystem 1.0
+
+name		xfprint
+version		4.5.92
+categories	xfce
+platforms	darwin
+maintainers	afb@macports.org
+description	Print dialog and printer manager for Xfce 4
+long_description ${description}
+homepage	http://www.xfce.org/
+master_sites	http://www.ca-us.xfce.org/archive/xfce-${version}/src/
+use_bzip2	yes
+checksums	md5 7945ab513be2a518cfaa03ba9867b066 \
+		sha1 e0b30252a7d210eaa09c6044d3943d06ede0214e \
+		rmd160 b406d69eff71369ecf3bf88a907906c2e50357e1
+
+configure.args	--enable-cups
+
+configure.cppflags-append	-L${x11prefix}/lib
+configure.ldflags-append	"-lXft -lfontconfig -lXrender -lXext -lXinerama -lXrandr"
+depends_lib	port:libxfcegui4 port:a2ps
+depends_build	port:libxfce4util port:libxfce4mcs port:xfce-mcs-manager
