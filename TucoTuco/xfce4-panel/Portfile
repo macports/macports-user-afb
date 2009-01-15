@@ -4,6 +4,7 @@ PortSystem 1.0
 
 name		xfce4-panel
 version		4.5.93
+revision	1
 categories	xfce
 platforms	darwin
 maintainers	afb@macports.org
@@ -19,6 +20,8 @@ checksums	md5 96c4cccf520aa789b267b14b491359ab \
 depends_lib	port:xfconf port:exo port:libxml2 port:cairo port:hicolor-icon-theme
 
 configure.args	--enable-startup-notification
+
+patchfiles	patch-launcher-exec.c
 
 platform darwin {
 	configure.args-append --disable-visibility
