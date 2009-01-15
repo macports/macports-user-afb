@@ -17,4 +17,4 @@ checksums	md5 99066cda2994c54124e5666c91834bd3 \
 		rmd160 bc30d686764644c586e6e995e55d80b4036507bf
 
 depends_lib	port:exo port:xfce4-panel
-depends_build	port:xfce-mcs-manager
+depends_build	port:xfconf
