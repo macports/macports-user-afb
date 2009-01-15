@@ -3,7 +3,7 @@
 PortSystem 1.0
 
 name		xfce4-settings
-version		4.5.92
+version		4.5.93
 categories	xfce
 platforms	darwin
 maintainers	afb@macports.org
@@ -12,9 +12,9 @@ long_description ${description}
 homepage	http://www.xfce.org/
 master_sites	http://www.ca-us.xfce.org/archive/xfce-${version}/src/
 use_bzip2	yes
-checksums	md5 0e9f8ea8043a902353d4b5b1c0528e4b \
-		sha1 3197160edb6c390e11dae0a1cebd1207e6ff6a74 \
-		rmd160 2be522f6828a46f0348d1942bad066de974d65a1
+checksums	md5 3873c76afcb8f1d174381825fc0467cf \
+		sha1 5dba062675d89de24de5daf77f51c4bb1e19ec34 \
+		rmd160 3a4736a39292cc91548398ffbc761c229d9ae999
 
 depends_lib	port:libxfcegui4 port:pkgconfig port:libwnck
 

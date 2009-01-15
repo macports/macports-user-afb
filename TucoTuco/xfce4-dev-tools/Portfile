@@ -3,7 +3,7 @@
 PortSystem 1.0
 
 name		xfce4-dev-tools
-version		4.5.92
+version		4.5.93
 categories	xfce devel
 platforms	darwin
 maintainers	afb@macports.org
@@ -11,9 +11,9 @@ description	A collection of tools and macros for Xfce developer
 long_description ${description}
 homepage	http://www.xfce.org/
 master_sites	http://www.ca-us.xfce.org/archive/xfce-${version}/src/
-checksums	md5 1c56d44989e0c369d494db6604309bb3 \
-		sha1 c37bc3090a7d8e6a0c1809b8658870931557135b \
-		rmd160 07ae579d9e095d5c0801563e58152153b0dce095
+checksums	md5 99d2362c4007d567dacec6b9cd1f05b9 \
+		sha1 25ff523fe849778ca98296ac825c109dfdfa1de2 \
+		rmd160 320426ab7449ef6bc1c5a7c58e9cc6f2aa003691
 
 use_bzip2	yes
 
