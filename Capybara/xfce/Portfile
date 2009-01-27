@@ -3,7 +3,7 @@
 PortSystem 1.0
 
 name		xfce
-version		4.5.93
+version		4.5.99.1
 categories	xfce
 platforms	darwin
 maintainers	afb@macports.org
