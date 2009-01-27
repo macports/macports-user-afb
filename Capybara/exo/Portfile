@@ -3,18 +3,18 @@
 PortSystem 1.0
 
 name		exo
-version		0.3.93
+version		0.3.99.1
 categories	xfce
 platforms	darwin
 maintainers	afb@macports.org
 description	libexo is targeted at application development for Xfce
 long_description ${description}
 homepage	http://www.xfce.org/
-master_sites	http://www.ca-us.xfce.org/archive/xfce-4.5.93/src/
+master_sites	http://www.ca-us.xfce.org/archive/xfce-4.5.99.1/src/
 use_bzip2	yes
-checksums	md5 5edbf2c2a2d7c43c7704b76a10cf46b8 \
-		sha1 85395be64d267d48b39496c48ff651a65a365efc \
-		rmd160 bc72b6b7a9dd0f12f2429779d1b2999e3fc9f864
+checksums	md5 aa53c97c252aaedb996983e2f67b1dfe \
+		sha1 2f80450db277560a5e564406dc1223b912e0df59 \
+		rmd160 d635d3b1d75978ec9e368229ec4777d9b85353dd
 
 configure.args	--mandir=${prefix}/share/man --disable-python
 

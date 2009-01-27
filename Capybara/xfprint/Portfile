@@ -3,7 +3,7 @@
 PortSystem 1.0
 
 name		xfprint
-version		4.5.93
+version		4.5.99.1
 categories	xfce
 platforms	darwin
 maintainers	afb@macports.org
@@ -12,13 +12,14 @@ long_description ${description}
 homepage	http://www.xfce.org/
 master_sites	http://www.ca-us.xfce.org/archive/xfce-${version}/src/
 use_bzip2	yes
-checksums	md5 2d3b658167bfbe10ec3258d7c3d995d2 \
-		sha1 ce8c05fd4e363ebf888478fa4b703c72534b091d \
-		rmd160 344cad7f8f483cdacf680e3b110e38e7df328ab2
+checksums	md5 fa5e680172156dfb0456a171534b1efd \
+		sha1 8d3c6a01131e7a71c8592658b96c41d5532076c1 \
+		rmd160 faedab15303a524aa23324f1d4dfb4524a3368f5
+
+depends_lib	port:libxfcegui4 port:a2ps
+depends_build	port:libxfce4util port:libxfcegui4 port:xfconf
 
 configure.args	--enable-cups
 
 configure.cppflags-append	-L${x11prefix}/lib
 configure.ldflags-append	"-lXft -lfontconfig -lXrender -lXext -lXinerama -lXrandr"
-depends_lib	port:libxfcegui4 port:a2ps
-depends_build	port:libxfce4util port:libxfcegui4 port:xfconf

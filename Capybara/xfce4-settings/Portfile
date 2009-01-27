@@ -3,7 +3,7 @@
 PortSystem 1.0
 
 name		xfce4-settings
-version		4.5.93
+version		4.5.99.1
 categories	xfce
 platforms	darwin
 maintainers	afb@macports.org
@@ -12,11 +12,13 @@ long_description ${description}
 homepage	http://www.xfce.org/
 master_sites	http://www.ca-us.xfce.org/archive/xfce-${version}/src/
 use_bzip2	yes
-checksums	md5 3873c76afcb8f1d174381825fc0467cf \
-		sha1 5dba062675d89de24de5daf77f51c4bb1e19ec34 \
-		rmd160 3a4736a39292cc91548398ffbc761c229d9ae999
+checksums	md5 7cd679a40b619adf27bf2edfb689b62f \
+		sha1 eb724691b38bbdd90aea818f85799850adfbf313 \
+		rmd160 99ca46b664da362dbe27729ac2cb35890e015eda
 
 depends_lib	port:libxfcegui4 port:pkgconfig port:libwnck
+
+patchfiles patch-workspaces.c
 
 platform darwin 8 {
     patchfiles-append		patch-configure.diff

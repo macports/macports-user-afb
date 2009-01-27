@@ -3,7 +3,7 @@
 PortSystem 1.0
 
 name		libxfcegui4
-version		4.5.93
+version		4.5.99.1
 categories	xfce
 platforms	darwin
 maintainers	afb@macports.org
@@ -12,9 +12,9 @@ long_description ${description}
 homepage	http://www.xfce.org/
 master_sites	http://www.ca-us.xfce.org/archive/xfce-${version}/src/
 use_bzip2	yes
-checksums	md5 e8c760abcd08df81abe4a2f94ced26aa \
-		sha1 1dc67a0c865c673d26054d3c9bfd5844c7331ee8 \
-		rmd160 6c08fdc2e30115acab3ec87ba5b304d4b9b554c5
+checksums	md5 71706c8a71821f39f4e8c5c419d05c40 \
+		sha1 195f7328385f8f59e885771e88463435a630abec \
+		rmd160 52db22da242628f18f79cb31caed6fd0c2c54fc7
 
 configure.args	--enable-startup-notification
 

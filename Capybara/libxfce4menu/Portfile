@@ -3,7 +3,7 @@
 PortSystem 1.0
 
 name		libxfce4menu
-version		4.5.93
+version		4.5.99.1
 categories	xfce
 platforms	darwin
 maintainers	afb@macports.org
@@ -12,9 +12,9 @@ long_description ${description}
 homepage	http://www.xfce.org/
 master_sites	http://www.ca-us.xfce.org/archive/xfce-${version}/src/
 use_bzip2	yes
-checksums	md5 54b75f848566f179fcfd463af03281ff \
-		sha1 86b546b1ce619fff6bb3ba7c1716f4128a6cc175 \
-		rmd160 20ea738f11ad3679e13fe2b822d741f3c86b02bb
+checksums	md5 7d90178f6bc6632ad42366c609cce4eb \
+		sha1 9b045dbd4d911d3ce87e71d6e80753a25f0e87da \
+		rmd160 a6796a3f943735e3fb7bed7b8de95e9ecc88d0de
 
 configure.args	--mandir=${prefix}/share/man
 

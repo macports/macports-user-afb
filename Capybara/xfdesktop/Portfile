@@ -3,7 +3,7 @@
 PortSystem 1.0
 
 name		xfdesktop
-version		4.5.93
+version		4.5.99.1
 categories	xfce
 platforms	darwin
 maintainers	afb@macports.org
@@ -12,9 +12,9 @@ long_description ${description}
 homepage	http://www.xfce.org/
 master_sites	http://www.ca-us.xfce.org/archive/xfce-${version}/src/
 use_bzip2	yes
-checksums	md5 9b56cf695a502a84878f154de077f593 \
-		sha1 dd29a87e2a6877b24180328fb004cbfebf95495f \
-		rmd160 cceb2ad71f9d064800857b31df174ee5f5162720
+checksums	md5 84343ef05823403c98981b933d3adfe6 \
+		sha1 f372c67566b465519c2b6069b9705e15a59952d9 \
+		rmd160 e4a0a1503bfd6cbc74270710eb14a87359a224dc
 
 depends_lib	port:libxml2 \
 		port:Thunar port:libxfcegui4

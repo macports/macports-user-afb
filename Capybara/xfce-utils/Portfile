@@ -3,8 +3,7 @@
 PortSystem 1.0
 
 name		xfce-utils
-version		4.5.93
-revision	1
+version		4.5.99.1
 categories	xfce
 platforms	darwin
 maintainers	afb@macports.org
@@ -13,9 +12,9 @@ long_description ${description}
 homepage	http://www.xfce.org/
 master_sites	http://www.ca-us.xfce.org/archive/xfce-${version}/src/
 use_bzip2	yes
-checksums	md5 dae0c86338acb3c66e433ba8a430a977 \
-		sha1 0fca77266c9ea3bee0fef6b19cef82ed6aa63c17 \
-		rmd160 cab31243672decc1b7d419a255f00b6b698d62a2
+checksums	md5 bb605ee9aff15abcc7a7eb2d3d24b227 \
+		sha1 185eb49848de1e563319a9bcc2ca4ce2a27d41c4 \
+		rmd160 f150554c74122be2bc6c1c2a7c74c688bb9a47ab
 
 depends_lib	port:libxfce4util port:xfconf
 
