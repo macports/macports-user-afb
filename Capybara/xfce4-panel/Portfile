@@ -17,7 +17,7 @@ checksums	md5 fc6b6db258bb779d02a44814e0389e86 \
 		sha1 f80debcd7a9bd3c8c7f09f211c8e893d9188e14b \
 		rmd160 ae3b2369f1e5b8c735b597f40989f5f43f2e2903
 
-depends_lib	port:exo port:libxml2 port:cairo \
+depends_lib	port:xfconf port:exo port:libxml2 port:cairo \
 		port:hicolor-icon-theme port:gnome-icon-theme
 
 configure.args	--enable-startup-notification
