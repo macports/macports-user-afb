@@ -1,0 +1,22 @@
+# $Id$
+
+PortSystem 1.0
+
+name		xfdesktop
+version		4.5.93
+categories	xfce
+platforms	darwin
+maintainers	afb@macports.org
+description	A desktop manager for the Xfce Desktop Environment
+long_description ${description}
+homepage	http://www.xfce.org/
+master_sites	http://www.ca-us.xfce.org/archive/xfce-${version}/src/
+use_bzip2	yes
+checksums	md5 9b56cf695a502a84878f154de077f593 \
+		sha1 dd29a87e2a6877b24180328fb004cbfebf95495f \
+		rmd160 cceb2ad71f9d064800857b31df174ee5f5162720
+
+depends_lib	port:libxml2 \
+		port:Thunar port:libxfcegui4
+
+depends_build   port:xfce4-panel port:libglade2

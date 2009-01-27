@@ -1,0 +1,38 @@
+# $Id$
+
+PortSystem 1.0
+
+name		xfce-utils
+version		4.5.93
+revision	1
+categories	xfce
+platforms	darwin
+maintainers	afb@macports.org
+description	Utilities for the Xfce Desktop Environment
+long_description ${description}
+homepage	http://www.xfce.org/
+master_sites	http://www.ca-us.xfce.org/archive/xfce-${version}/src/
+use_bzip2	yes
+checksums	md5 dae0c86338acb3c66e433ba8a430a977 \
+		sha1 0fca77266c9ea3bee0fef6b19cef82ed6aa63c17 \
+		rmd160 cab31243672decc1b7d419a255f00b6b698d62a2
+
+depends_lib	port:libxfce4util port:xfconf
+
+configure.args	--disable-gdm --with-xsession-prefix=${prefix}
+configure.ldflags-append	"-L${x11prefix}/lib -lXft -lfontconfig -lXrender -lXext -lXinerama -lXrandr"
+
+variant midori {
+	depends_lib-append port:midori
+	configure.args-append --with-browser=midori
+}
+
+variant firefox {
+	depends_lib port:firefox-x11
+	configure.args-append --with-browser=firefox
+}
+
+variant seamonkey {
+	depends_lib port:seamonkey
+	configure.args-append --with-browser=seamonkey
+}

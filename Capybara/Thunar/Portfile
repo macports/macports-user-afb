@@ -1,0 +1,26 @@
+# $Id$
+
+PortSystem 1.0
+
+name		Thunar
+version		0.9.93
+categories	xfce
+platforms	darwin
+maintainers	afb@macports.org
+description	Thunar is a modern file manager for the Unix/Linux desktop
+long_description ${description}
+homepage	http://www.xfce.org/
+master_sites	http://www.ca-us.xfce.org/archive/xfce-4.5.93/src/
+use_bzip2	yes
+checksums	md5 8fb12c28284503929732dea8c185c413 \
+		sha1 b136e5371dcec7616c5a270cf822d526d5fd77f1 \
+		rmd160 edb6d305af15556765a2da197a896c39e72cf96c
+
+configure.args	--enable-dbus --enable-startup-notification \
+		--enable-pcre --enable-exif --disable-visibility
+
+depends_lib	port:exo port:pcre port:libexif \
+		port:shared-mime-info port:desktop-file-utils \
+		port:startup-notification
+
+patchfiles	patch-thunar-metafile.c

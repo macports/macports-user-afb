@@ -1,0 +1,28 @@
+# $Id$
+
+PortSystem 1.0
+
+name		xfce4-panel
+version		4.5.93
+revision	1
+categories	xfce
+platforms	darwin
+maintainers	afb@macports.org
+description	The panel of the Xfce Desktop Environment
+long_description ${description}
+homepage	http://www.xfce.org/
+master_sites	http://www.ca-us.xfce.org/archive/xfce-${version}/src/
+use_bzip2	yes
+checksums	md5 96c4cccf520aa789b267b14b491359ab \
+		sha1 eca59c281cb7cebd307ea4f77c705ff2085b80d3 \
+		rmd160 ecf46f59b12f87f9494172542776e60aebe7b31f
+
+depends_lib	port:xfconf port:exo port:libxml2 port:cairo port:hicolor-icon-theme
+
+configure.args	--enable-startup-notification
+
+patchfiles	patch-launcher-exec.c
+
+platform darwin {
+	configure.args-append --disable-visibility
+}

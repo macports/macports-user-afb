@@ -1,0 +1,21 @@
+# $Id$
+
+PortSystem 1.0
+
+name		xfwm4
+version		4.5.93
+categories	xfce
+platforms	darwin
+maintainers	afb@macports.org
+description	The window manager for Xfce
+long_description ${description}
+homepage	http://www.xfce.org/
+master_sites	http://www.ca-us.xfce.org/archive/xfce-${version}/src/
+use_bzip2	yes
+checksums	md5 5655230f7323cda513cf3cc26b8bea78 \
+		sha1 21a63a20fd08de5afb962b483ecd41471c390bca \
+		rmd160 8c86dca338be4c27bea33241b9632ffc29375d62
+
+configure.args	--enable-randr --enable-startup-notification \
+		--disable-compositor --disable-xsync
+depends_lib	port:xfconf port:gtk2 port:dbus-glib lib:libXrandr:XFree86

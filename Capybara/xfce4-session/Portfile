@@ -1,0 +1,20 @@
+# $Id$
+
+PortSystem 1.0
+
+name		xfce4-session
+version		4.5.93
+categories	xfce
+platforms	darwin
+maintainers	afb@macports.org
+description	Session manager for the Xfce desktop environment.
+long_description ${description}
+homepage	http://www.xfce.org/
+master_sites	http://www.ca-us.xfce.org/archive/xfce-${version}/src/
+use_bzip2	yes
+checksums	md5 7d3b5f1400cc053ef01ad61e209d5828 \
+		sha1 922ac2b38b593b20a6b4315e05aae92fc5f4c790 \
+		rmd160 e8af17237d3617d51588863468ee39f9ccdde019
+
+configure.args	--enable-session-screenshots --disable-gnome
+depends_lib	port:libxfce4util port:libxfcegui4 port:p5-xml-parser port:libwnck
