@@ -4,6 +4,7 @@ PortSystem 1.0
 
 name		exo
 version		0.3.99.1
+revision	2
 categories	xfce
 platforms	darwin
 maintainers	afb@macports.org
@@ -19,6 +20,8 @@ checksums	md5 aa53c97c252aaedb996983e2f67b1dfe \
 configure.args	--mandir=${prefix}/share/man --disable-python
 
 depends_lib	port:p5-uri port:libxfce4util port:gtk2 port:pkgconfig
+
+patchfiles	exo-mmintrin.diff filemanagers.diff prefFileman.diff
 
 platform darwin {
 	configure.args-append --disable-visibility
